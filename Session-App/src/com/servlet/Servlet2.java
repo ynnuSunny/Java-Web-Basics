@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,7 +17,12 @@ public class Servlet2 extends HttpServlet {
 		
 		PrintWriter out = resp.getWriter();
 		
-		out.println(req.getParameter(req.getParameter("data")));
+		//getCookies ekta array return kore
+		Cookie[] ck = req.getCookies();
+		resp.setContentType("text/html");
+		
+		//amra jehetu ekta cookie rakhsi so 1st index ei thakbe
+		out.println(ck[0].getValue());
 		out.println("THis is second Servlet");
 	}
 }
