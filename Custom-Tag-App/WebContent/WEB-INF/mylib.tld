@@ -11,11 +11,21 @@
 	<tag>
 		<name>greet</name>
 		<tag-class>tag.Welcome</tag-class>
+		
+		<attribute>
+		  <name>msg</name>
+		  <required>true</required>
+		</attribute>
 	</tag>
 
 	<tag>
 		<name>demo</name>
 		<tag-class>tag.Demo</tag-class>
+		
+		<attribute>
+		  <name>side</name>
+		  <required>true</required>
+		</attribute>
 	</tag>
 
 </taglib>

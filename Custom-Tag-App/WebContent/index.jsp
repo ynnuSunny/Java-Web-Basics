@@ -13,9 +13,9 @@
 </head>
 <body>
 
-    <t:greet></t:greet>
+    <t:greet msg="Sunny Sutradhar"></t:greet>
     <br>
-    <t:demo></t:demo>
+    <t:demo side="5"></t:demo>
 
 </body>
 </html>
