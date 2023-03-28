@@ -1,11 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@page isELIgnored="false"%>
+
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Admin Login Page</title>
 <%@include file="../component/allcss.jsp"%>
+
 
 <style type="text/css">
 .paint-card {
@@ -24,8 +30,14 @@
 						<p class="fs-4 text-center">Admin Login</p>
 						
 						
+						<c:if test="${not empty errorMsg }">
+						 <p class="text-center text-success fs-3">${errorMsg}</p>
+						  <c:remove var="errorMsg" scope="session"/>
+						</c:if>
+					
 						
-						<form action="doctorLogin" method="post">
+						
+						<form action="adminLogin" method="post">
 							<div class="mb-3">
 								<label class="form-label">Email address</label> <input required
 									name="email" type="email" class="form-control">
