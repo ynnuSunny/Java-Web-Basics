@@ -20,20 +20,27 @@ public class Program1 {
 //		    ps.setString(3, "Dhaka, Bangladeh");
 		    
 		    //updae
-		    PreparedStatement ps = conn.prepareStatement("update studentInfo set name=? , address=? where id=?");
-            ps.setString(1, "Riya");
- 		    ps.setString(2, "Mohammod Pur, Bangladeh");
- 		    ps.setInt(3, 85);
+//		    PreparedStatement ps = conn.prepareStatement("update studentInfo set name=? , address=? where id=?");
+//            ps.setString(1, "Riya");
+// 		    ps.setString(2, "Mohammod Pur, Bangladeh");
+// 		    ps.setInt(3, 85);
 		    
 		    //step 4
-		    int i = 1;
-		    ps.executeUpdate();
-		    if(i==1) {
-		    	System.out.println("Update Succefully");
-		    }else {
-		    	System.out.println("Not Inserted");
-		    }
+//		    int i = 1;
+//		    ps.executeUpdate();
+//		    if(i==1) {
+//		    	System.out.println("Update Succefully");
+//		    }else {
+//		    	System.out.println("Not Inserted");
+//		    }
 		    
+		    PreparedStatement ps = conn.prepareStatement("select * from studentInfo");
+		    
+		    ResultSet rs = ps.executeQuery();
+		    
+		    while(rs.next()) {
+		    	System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3));
+		    }
 		    
 		    //step 5
 		    conn.close();

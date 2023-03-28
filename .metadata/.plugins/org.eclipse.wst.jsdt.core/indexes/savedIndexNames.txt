@@ -13,5 +13,4 @@ INDEX VERSION 1.4+D:\Java_Workplace\.metadata\.plugins\org.eclipse.wst.jsdt.core
 2841412311.index
 389696936.index
 1687128201.index
-2271114043.index
 3799198171.index
