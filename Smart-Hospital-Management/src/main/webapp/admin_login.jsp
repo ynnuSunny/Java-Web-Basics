@@ -30,6 +30,11 @@
 						<p class="fs-4 text-center">Admin Login</p>
 						
 						
+						<c:if test="${not empty sucMsg }">
+						 <p class="text-center text-success fs-3">${sucMsg}</p>
+						  <c:remove var="sucMsg" scope="session"/>
+						</c:if>
+						
 						<c:if test="${not empty errorMsg }">
 						 <p class="text-center text-success fs-3">${errorMsg}</p>
 						  <c:remove var="errorMsg" scope="session"/>
