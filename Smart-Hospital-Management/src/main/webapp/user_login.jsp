@@ -24,7 +24,7 @@
 						
 						
 						
-						<form action="doctorLogin" method="post">
+						<form action="userlogin" method="post">
 							<div class="mb-3">
 								<label class="form-label">Email address</label> <input required
 									name="email" type="email" class="form-control">

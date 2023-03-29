@@ -11,7 +11,7 @@ public class User {
 	}
 	
 	public User(String fullname, String email, String password) {
-		super();
+		//super();
 		this.fullname = fullname;
 		this.email = email;
 		this.password = password;
@@ -20,9 +20,9 @@ public class User {
 	public int getId() {
 		return id;
 	}
-//	public void setId(int id) {
-//		this.id = id;
-//	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getFullname() {
 		return fullname;
 	}
