@@ -27,11 +27,11 @@ public class UserLogin extends HttpServlet {
 			User u = dao.login(email, password);
 			if(u!=null) {
 				session.setAttribute("userObj", u);
-				System.out.println("User login Successfully");
-				resp.sendRedirect("admin/index.jsp");
+				//System.out.println("User login Successfully");
+				resp.sendRedirect("index.jsp");
 			}else {
 				session.setAttribute("erroMsg", "invalid email and password");
-				System.out.println("Something Wrong");
+				//System.out.println("Something Wrong");
 			    resp.sendRedirect("user_login.jsp");
 			}
 		}catch(Exception e) {
