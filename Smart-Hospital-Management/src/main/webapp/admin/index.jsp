@@ -11,7 +11,9 @@
 
 </head>
 <body>
-
+   <c:if test="${empty adminObj}">
+      <c:redirect url="../admin_login.jsp"></c:redirect>
+   </c:if>t
 
   <h1> Admin DashBoard</h1>
 
