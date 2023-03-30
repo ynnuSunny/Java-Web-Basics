@@ -38,7 +38,7 @@
 					<div class="card-body text-center text-success">
 						<i class="fas fa-user-md fa-3x"></i><br>
 						<p class="fs-4 text-center">
-							Doctor 
+							Doctor <br><%=dao.countDoctor()%>
 						</p>
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 						<i class="far fa-calendar-check fa-3x"></i><br>
 						<p class="fs-4 text-center">
 							Total Appointment <br>
-							
+							<%=dao.countAppointmentByDocotrId(d.getId())%>
 						</p>
 					</div>
 				</div>
