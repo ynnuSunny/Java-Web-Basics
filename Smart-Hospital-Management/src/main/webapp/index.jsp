@@ -17,9 +17,7 @@
 <body>
 	<%@include file="../component/navbar.jsp"%>
 	
-	  <c:if test="${ empty adminObj }">
-		<c:redirect url="admin/index.jsp"></c:redirect>
-	</c:if>
+	 
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
