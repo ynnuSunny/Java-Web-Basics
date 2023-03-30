@@ -65,7 +65,7 @@
 										class="btn btn-sm btn-primary">Edit</a> 
 										
 										<a
-										href="../deleteDoctor?id=<%=d.getId()%>"
+										href="../deleteDcotor?id=<%=d.getId()%>"
 										class="btn btn-sm btn-danger">Delete</a></td>
 								</tr>
 								<%
